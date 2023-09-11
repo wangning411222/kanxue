@@ -1,0 +1,476 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			//社区
+			"path": "pages/bbs/bbs",
+			"style": {
+				"navigationStyle":"default",
+				"navigationBarTextStyle": "black",
+				"app-plus": {
+					"bounce": "none",
+					"titleNView": {
+						"titleText":"",
+						"backgroundColor": "#ffffff",
+						"tags" : [
+							{ 
+								"tag" : "font",
+								"text": "看雪社区", 
+								"position" : {  
+									"left" : "auto",
+									"right" : "auto",
+									"top" : "auto", 
+									"width" : "80px",  
+									"height" : "auto"  
+								},
+								"textStyles": {
+									"color": "#555555",
+									"size": "20px"
+								}
+							}  
+						]  
+					
+					}
+				 
+				}
+			}
+		},
+		{
+			//bbs thread
+			"path": "pages/bbs/children/thread",
+			"style": {
+				"app-plus": {
+					"bounce": "none",
+					"titleNView": {
+						"titleText":"详情",
+						"titleColor": "#FFFFFF",
+						"backgroundColor": "#0099ee"
+						
+					},
+					"softinputMode": "adjustPan"
+				 
+				}
+			}
+		},
+		{
+			//bbs send
+			"path": "pages/bbs/children/send",
+			"style": {
+				"app-plus": {
+					"bounce": "none",
+					"titleNView": {
+						"titleText":"发帖",
+						"titleColor": "#FFFFFF",
+						"backgroundColor": "#0099ee",
+						"buttons": [ //原生标题栏按钮配置,
+						    {
+							"text": "发送", //点击事件可通过页面的 onNavigationBarButtonTap 函数进行监听
+							"width": "60px",
+							"fontSize": "16px",
+							"fontWeight":"bold",
+							"color":"#FFFFFF"
+						    							
+						    }
+						]
+					
+										
+					},
+					"softinputMode": "adjustResize"
+				 
+				}
+			}
+		},
+		{
+			//版块 
+			"path": "pages/bbs/children/forum",
+			"style": {
+				"app-plus": {
+					"bounce": "none",
+					"titleNView": {
+						"titleText":"所有版块",
+						"titleColor": "#555555",
+						"backgroundColor": "#ffffff"
+					
+					}
+				 
+				}
+			}
+		},
+		{
+			//个人主页
+			"path": "pages/bbs/children/ucenter",
+			"style": {
+				"app-plus": {
+					"bounce": "none",
+					"titleNView": {
+						"titleText":"Ta的主页",
+						"titleColor": "#FFFFFF",
+						"backgroundColor": "#0099ee"
+					
+					}
+				 
+				}
+			}
+		},
+		
+		{
+			//活动
+			"path": "pages/activity/activity",
+			"style": {
+				"navigationStyle":"default",
+				"navigationBarTextStyle": "black",
+				"app-plus": {
+					"bounce": "none",
+					"titleNView": {
+						"titleText":"",
+						"backgroundColor": "#FFFFFF",
+						"tags" : [
+							{ 
+								"tag" : "font",
+								"text": "活动", 
+								"position" : {  
+									"left" : "auto",
+									"right" : "auto",
+									"top" : "auto", 
+									"width" : "40px",  
+									"height" : "auto"  
+								},
+								"textStyles": {
+									"color": "#555555",
+									"size": "18px"
+								}
+							}  
+						]  
+					}
+				 
+				}
+			}
+		},
+		{
+			//活动详情
+			"path": "pages/activity/children/read",
+			"style": {
+				"app-plus": {
+					"bounce": "none",
+					"titleNView": {
+						"titleText":"活动详情",
+						"titleColor": "#FFFFFF",
+						"backgroundColor": "#0099ee"
+					
+					}
+				 
+				}
+			}
+		},
+		{
+			//我的
+			"path": "pages/mine/mine",
+			"style": {
+				"app-plus": {
+					"bounce": "none"
+				}
+			}
+		},
+		{
+			//找回密码
+			"path": "pages/mine/children/forget",
+			"style": {
+				"app-plus": {
+					"bounce": "none",
+					"titleNView": {
+						"titleText":"找回密码",
+						"titleColor": "#8799a3",
+						"backgroundColor": "#FFFFFF"
+					
+					},
+					"softinputMode": "adjustResize"
+				 
+				}
+			}
+		},
+		
+		{
+			//登录
+			"path": "pages/mine/children/login",
+			"style": {
+				"app-plus": {
+					"softinputMode": "adjustResize"
+				 
+				}
+			}
+		},
+		{
+			//签到
+			"path": "pages/mine/children/sign_in",
+			"style": {
+				"app-plus": {
+					"bounce": "none",
+					"titleNView": {
+						"titleText":"签到",
+						"titleColor": "#FFFFFF",
+						"backgroundColor": "#0099ee"
+					
+					}
+				 
+				}
+			}
+		},
+		{
+			//历史记录 主题贴 回帖 收藏帖子 的模板
+			"path": "pages/mine/children/post_template",
+			"style": {
+				"app-plus": {
+					"bounce": "none",
+					"titleNView": {
+						"titleText":"",
+						"titleColor": "#FFFFFF",
+						"backgroundColor": "#0099ee"
+					
+					}
+				 
+				}
+			}
+		},
+		{
+			//勋章
+			"path": "pages/mine/children/medal",
+			"style": {
+				"app-plus": {
+					"bounce": "none",
+					"titleNView": {
+						"titleText":"勋章",
+						"titleColor": "#FFFFFF",
+						"backgroundColor": "#0099ee"
+					
+					}
+				 
+				}
+			}
+		},
+		{
+			//雪币
+			"path": "pages/mine/children/golds",
+			"style": {
+				"app-plus": {
+					"bounce": "none",
+					"titleNView": {
+						"titleText":"雪币明细",
+						"titleColor": "#FFFFFF",
+						"backgroundColor": "#0099ee"
+					
+					}
+				 
+				}
+			}
+		},
+		{
+			//设置
+			"path": "pages/mine/children/set_up",
+			"style": {
+				"app-plus": {
+					"bounce": "none",
+					"titleNView": {
+						"titleText":"设置",
+						"titleColor": "#FFFFFF",
+						"backgroundColor": "#0099ee"
+					
+					}
+				 
+				}
+			}
+		},
+		{
+			// 关于
+			"path": "pages/mine/children/about",
+			"style": {
+				"app-plus": {
+					"bounce": "none",
+					"titleNView": {
+						"titleText":"关于",
+						"titleColor": "#FFFFFF",
+						"backgroundColor": "#0099ee"
+					
+					}
+				 
+				}
+			}
+		},
+		{
+			// 账号隐私
+			"path": "pages/mine/children/privacy",
+			"style": {
+				"app-plus": {
+					"bounce": "none",
+					"titleNView": {
+						"titleText":"账号和隐私",
+						"titleColor": "#FFFFFF",
+						"backgroundColor": "#0099ee"
+					
+					}
+				 
+				}
+			}
+		},
+		{
+			// 修改手机号
+			"path": "pages/mine/children/change_phone_number",
+			"style": {
+				"app-plus": {
+					"bounce": "none",
+					"titleNView": {
+						"titleText":"修改手机号",
+						"titleColor": "#FFFFFF",
+						"backgroundColor": "#0099ee"
+					
+					},
+					"softinputMode": "adjustResize"
+				 
+				}
+			}
+		},
+		{
+			// 修改密码
+			"path": "pages/mine/children/change_password",
+			"style": {
+				"app-plus": {
+					"bounce": "none",
+					"titleNView": {
+						"titleText":"修改密码",
+						"titleColor": "#FFFFFF",
+						"backgroundColor": "#0099ee"
+					
+					},
+					"softinputMode": "adjustResize"
+				 
+				}
+			}
+		},
+		{
+			// 修改邮箱
+			"path": "pages/mine/children/change_email",
+			"style": {
+				"app-plus": {
+					"bounce": "none",
+					"titleNView": {
+						"titleText":"修改邮箱",
+						"titleColor": "#FFFFFF",
+						"backgroundColor": "#0099ee"
+					
+					},
+					"softinputMode": "adjustResize"
+				 
+				}
+			}
+		},
+		{
+			// 修改微信
+			"path": "pages/mine/children/change_wechat",
+			"style": {
+				"app-plus": {
+					"bounce": "none",
+					"titleNView": {
+						"titleText":"修改微信",
+						"titleColor": "#FFFFFF",
+						"backgroundColor": "#0099ee"
+					
+					},
+					"softinputMode": "adjustResize"
+				 
+				}
+			}
+		},
+		{
+			//消息
+			"path": "pages/notice/notice",
+			"style": {
+				"navigationBarTextStyle":"black",
+				"app-plus": {
+					"bounce": "none"
+				}
+			}
+		},
+		{
+			//写短信
+			"path": "pages/notice/create",
+			"style": {
+				
+				"app-plus": {
+					"bounce": "none",
+					"titleNView": {
+						"titleText":"写短信",
+						"titleColor": "#FFFFFF",
+						"backgroundColor": "#0099ee"
+						
+					
+					},
+					"softinputMode": "adjustResize"
+				 
+				}
+			}
+		},
+
+		{
+			//读取信息
+			"path": "pages/notice/read",
+			"style": {
+				"navigationBarTextStyle":"black",
+				"app-plus": {
+					"bounce": "none",
+					"titleNView": {
+						"titleText":"我的私信",
+						"titleColor": "#555555",
+						"backgroundColor": "#FFFFFF"
+						
+					},
+					"softinputMode": "adjustResize"
+				}
+			}
+		}
+	],
+	"globalStyle": {
+		"navigationStyle":"custom",
+		"backgroundColor": "#FFFFFF"
+	},
+	"tabBar": {
+		"color": "#707070",
+		"selectedColor": "#0099ee",
+		"borderStyle": "black",
+		"backgroundColor": "#FFFFFF",
+	
+		"list": [{
+				"pagePath": "pages/bbs/bbs",
+				"iconPath": "static/tab/tabHome.png",
+				"selectedIconPath": "static/tab/tabHome_ac.png",
+				"text": "社区"
+			},
+			// {
+			// 	"pagePath": "pages/activity/activity",
+			// 	"iconPath": "static/tab/tabActivity.png",
+			// 	"selectedIconPath": "static/tab/tabActivity_ac.png",
+			// 	"text": "活动"
+			// },
+			{
+				"pagePath": "pages/notice/notice",
+				"iconPath": "static/tab/tabMes.png",
+				"selectedIconPath": "static/tab/tabMes_ac.png",
+				"text": "消息"
+			},
+			{
+				"pagePath": "pages/mine/mine",
+				"iconPath": "static/tab/tabMine.png",
+				"selectedIconPath": "static/tab/tabMine_ac.png",
+				"text": "我的"
+			}
+	
+		]
+	},
+	"condition" : { //模式配置，仅开发期间生效
+		"current": 0, //当前激活的模式(list 的索引项)
+		"list": [
+			{
+				"name": "", //模式名称
+				"path": "", //启动页面，必选
+				"query": "" //启动参数，在页面的onLoad函数里面得到
+			}
+		]
+	}
+}
